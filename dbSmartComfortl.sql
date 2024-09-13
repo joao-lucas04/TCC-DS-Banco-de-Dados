@@ -4,14 +4,14 @@ create database dbSmartComfort;
 use dbSmartComfort;
 
 CREATE TABLE tbPJ (
-Cnpj numeric(18) PRIMARY KEY,
+Cnpj numeric(14) PRIMARY KEY,
 RazaoSocial varchar(250) not null,
 NomeResponsavel varchar(200) not null,
 IdCli int
 );
 
 CREATE TABLE tbPF (
-Cpf numeric(14) PRIMARY KEY,
+Cpf numeric(11) PRIMARY KEY,
 NomeCompleto varchar(200) not null,
 DataNasc date not null,
 IdCli int
